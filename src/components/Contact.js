@@ -3,18 +3,18 @@ const Contact = () => {
     <div>
       <h1>Contact Me</h1>
       <form>
-        <label for="firstname">First name:</label>
+        <label htmlFor="firstname">First name:</label>
         <br />
-        <input type="text" id="firstname" name="firstname" value="John" />
+        <input type="text" id="firstname" name="firstname" placeholder="John" />
         <br />
-        <label for="lastname">Last name:</label>
+        <label htmlFor="lastname">Last name:</label>
         <br />
-        <input type="text" id="lastname" name="lastname" value="Doe" />
+        <input type="text" id="lastname" name="lastname" placeholder="Doe" />
         <br />
         <br />
-        <textarea>Message Me!</textarea>
+        <textarea placeholder="Message here!"></textarea>
         <br />
-        <input type="submit" value="Submit" />
+        <input type="submit" defaultValue="Submit" />
       </form>
     </div>
   );

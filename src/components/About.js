@@ -3,7 +3,7 @@ import img from "../images/software-developer.jpg";
 
 const About = () => {
   return (
-    <div>
+    <div style={{ marginTop: "50px" }}>
       <Card
         className="bg-white"
         style={{ fontFamily: "Courier New", fontWeight: "bold" }}
@@ -14,12 +14,8 @@ const About = () => {
           style={{ width: "100vw", height: "100vh", objectFit: "contain" }}
         />
         <Card.ImgOverlay style={{ color: "black", marginTop: "2px" }}>
-          <Card.Title>
-            <h1>Hello, My Name is Omar Moreta</h1>
-          </Card.Title>
-          <Card.Text>
-            <h2>I am a full-stack web developer.</h2>
-          </Card.Text>
+          <Card.Title>Hello, My Name is Omar</Card.Title>
+          <Card.Text>I am a full-stack web developer.</Card.Text>
         </Card.ImgOverlay>
       </Card>
     </div>
