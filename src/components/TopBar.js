@@ -12,7 +12,7 @@ const TopBar = () => {
       <Router>
         <Navbar bg="light" fixed="top">
           <Container>
-            <Navbar.Brand>Omar Moreta</Navbar.Brand>
+            <Navbar.Brand>&#60; Omar Moreta &#47;&#62;</Navbar.Brand>
           </Container>
           <Nav variant="pills" className="justify-content-end">
             <Nav.Item>
@@ -39,9 +39,9 @@ const TopBar = () => {
         </Navbar>
         <Routes>
           <Route path="/home" />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" />
+          <Route path="/projects" />
+          <Route path="/contact" />
         </Routes>
       </Router>
     </div>
