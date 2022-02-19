@@ -2,7 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
-import About from "./About";
+import About from "./Intro";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -11,7 +11,7 @@ const TopBar = () => {
     <div>
       <Router>
         <Navbar bg="light" fixed="top">
-          <Container>
+          <Container style={{ marginLeft: 1 }}>
             <Navbar.Brand>&#60; Omar Moreta &#47;&#62;</Navbar.Brand>
           </Container>
           <Nav variant="pills" className="justify-content-end">

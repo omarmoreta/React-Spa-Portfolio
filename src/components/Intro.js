@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import img from "../images/software-developer.jpg";
 
-const About = () => {
+const Intro = () => {
   return (
     <div style={{ marginTop: "50px" }}>
       <Card
@@ -24,4 +24,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Intro;

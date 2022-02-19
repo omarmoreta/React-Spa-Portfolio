@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import TopBar from "./components/TopBar";
-import About from "./components/About";
+import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -25,18 +25,24 @@ function App() {
   return (
     <div className="App">
       <TopBar />
-      <About />
-      <Projects />
-      <a href={gitHubURL}>
-        <button>GitHub Page</button>
-      </a>
-      <div>
+      <Intro />
+      <div style={{ marginTop: "70px" }}>
         <img
           style={{ borderRadius: "500px" }}
           src={gitHubImageURL}
           alt="Github profile image"
         />
+        <br />
+        <br />
+        <div>
+          <a href={gitHubURL}>
+            <button>GitHub Page</button>
+          </a>
+        </div>
       </div>
+
+      <Projects />
+
       <Contact />
       <Footer />
     </div>
