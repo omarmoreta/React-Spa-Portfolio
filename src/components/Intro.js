@@ -9,19 +9,19 @@ const Intro = () => {
         style={{
           fontFamily: "Courier New",
           fontWeight: "bold",
-          marginBottom: "200px",
+          marginBottom: "100px",
         }}
       >
         <Card.Img
           src={banner}
           alt="intro banner"
-          style={{ marginTop: "250px", objectFit: "cover" }}
+          style={{ marginTop: "230px", objectFit: "cover" }}
         />
         <Card.ImgOverlay
-          style={{ color: "black", marginTop: "100px", fontSize: "30px" }}
+          style={{ color: "black", marginTop: "70px", fontSize: "30px" }}
         >
           <Card.Title style={{ fontSize: "30px" }}>
-            Hello, My Name is Omar
+            Hello, my name is Omar
           </Card.Title>
           <Card.Text>I am a full-stack web developer.</Card.Text>
         </Card.ImgOverlay>

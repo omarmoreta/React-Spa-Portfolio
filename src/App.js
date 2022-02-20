@@ -26,7 +26,8 @@ function App() {
     <div className="App">
       <TopBar />
       <Intro />
-      <div style={{ marginTop: "70px" }}>
+      <Projects />
+      <div style={{ marginTop: "70px", marginBottom: "70px" }}>
         <img
           style={{ borderRadius: "500px" }}
           src={gitHubImageURL}
@@ -36,13 +37,10 @@ function App() {
         <br />
         <div>
           <a href={gitHubURL}>
-            <button>GitHub Page</button>
+            <button>GitHub</button>
           </a>
         </div>
       </div>
-
-      <Projects />
-
       <Contact />
       <Footer />
     </div>
