@@ -14,7 +14,7 @@ const TopBar = () => {
               style={{ color: "gray", fontFamily: "Lucida Sans" }}
               href="#"
             >
-              Omar Moreta
+              OMAR MORETA
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
@@ -33,42 +33,46 @@ const TopBar = () => {
                 <NavHashLink
                   to="#home"
                   style={{
+                    fontFamily: "Lucida Sans",
                     color: "gray",
                     padding: "5px",
                     textDecoration: "none",
                   }}
                 >
-                  Home
+                  HOME
                 </NavHashLink>
                 <NavHashLink
                   to="#projects"
                   style={{
+                    fontFamily: "Lucida Sans",
                     color: "gray",
                     padding: "5px",
                     textDecoration: "none",
                   }}
                 >
-                  Projects
+                  PROJECTS
                 </NavHashLink>
                 <NavHashLink
                   to="#about"
                   style={{
+                    fontFamily: "Lucida Sans",
                     color: "gray",
                     padding: "5px",
                     textDecoration: "none",
                   }}
                 >
-                  About
+                  ABOUT
                 </NavHashLink>
                 <NavHashLink
                   to="#contact"
                   style={{
+                    fontFamily: "Lucida Sans",
                     color: "gray",
                     padding: "5px",
                     textDecoration: "none",
                   }}
                 >
-                  Contact
+                  CONTACT
                 </NavHashLink>
               </Nav>
             </Navbar.Collapse>

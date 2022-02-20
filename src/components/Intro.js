@@ -5,7 +5,6 @@ const Intro = () => {
   return (
     <div id="home">
       <Card
-        className="bg-light"
         style={{
           fontSize: "100px",
           marginBottom: "60px",

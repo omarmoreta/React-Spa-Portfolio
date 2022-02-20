@@ -30,14 +30,14 @@ function App() {
       <div style={{ marginTop: "70px", marginBottom: "70px" }}>
         <img
           id="contact"
-          style={{ borderRadius: "500px" }}
+          style={{ borderRadius: "500px", maxWidth: "370px" }}
           src={gitHubImageURL}
           alt="Github profile image"
         />
         <br />
         <br />
         <div>
-          <a href={gitHubURL}>
+          <a href={gitHubURL} target="_blank">
             <button>GitHub</button>
           </a>
         </div>

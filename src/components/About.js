@@ -16,7 +16,7 @@ const About = () => {
                 <Card.Img variant="top" src="http://placekitten.com/160/100" />
                 <Card.Body>
                   <Card.Title>Experience</Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ fontFamily: "Lucida Sans" }}>
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
                     longer.
@@ -35,7 +35,7 @@ const About = () => {
                 <Card.Img variant="top" src="http://placekitten.com/160/100" />
                 <Card.Body>
                   <Card.Title>Education</Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ fontFamily: "Lucida Sans" }}>
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
                     longer.
@@ -54,7 +54,7 @@ const About = () => {
                 <Card.Img variant="top" src="http://placekitten.com/160/100" />
                 <Card.Body>
                   <Card.Title>Resume</Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ fontFamily: "Lucida Sans" }}>
                     This is a wider card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit
                     longer.
