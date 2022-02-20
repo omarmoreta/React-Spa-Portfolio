@@ -7,10 +7,11 @@ import Button from "react-bootstrap/Button";
 const Projects = () => {
   return (
     <div>
-      <Container style={{ marginTop: "100px", marginBottom: "100px" }}>
+      <h1 id="projects">Projects</h1>
+      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
         <Row xs={1} md={3}>
           <Col>
-            <Card border="warning" className="mb-3">
+            <Card border="secondary" className="mb-3">
               <Card.Img variant="top" src="http://placekitten.com/160/100" />
               <Card.Body>
                 <Card.Title>Project 1</Card.Title>
@@ -19,15 +20,21 @@ const Projects = () => {
                   lead-in to additional content. This content is a little bit
                   longer.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="secondary" size="md">
+                  Button
+                </Button>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">
+                  <Button variant="secondary" size="md">
+                    GitHub
+                  </Button>
+                </small>
               </Card.Footer>
             </Card>
           </Col>
           <Col>
-            <Card border="primary" className="mb-3">
+            <Card border="secondary" className="mb-3">
               <Card.Img variant="top" src="http://placekitten.com/160/100" />
               <Card.Body>
                 <Card.Title>Project 2</Card.Title>
@@ -36,10 +43,16 @@ const Projects = () => {
                   lead-in to additional content. This content is a little bit
                   longer.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="secondary" size="md">
+                  Button
+                </Button>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">
+                  <Button variant="secondary" size="md">
+                    GitHub
+                  </Button>
+                </small>
               </Card.Footer>
             </Card>
           </Col>
@@ -53,10 +66,16 @@ const Projects = () => {
                   lead-in to additional content. This content is a little bit
                   longer.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="secondary" size="md">
+                  Button
+                </Button>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <small className="text-muted">
+                  <Button variant="secondary" size="md">
+                    GitHub
+                  </Button>
+                </small>
               </Card.Footer>
             </Card>
           </Col>

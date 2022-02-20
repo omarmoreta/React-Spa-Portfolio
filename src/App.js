@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import TopBar from "./components/TopBar";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [gitHubName, setGitHubName] = useState("");
   const [gitHubURL, setGitHubURL] = useState("");
   const [gitHubImageURL, setGitHubImageURL] = useState("");
 
@@ -16,7 +16,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setGitHubName(data.name);
         setGitHubURL(data.html_url);
         setGitHubImageURL(data.avatar_url);
       });
@@ -27,8 +26,10 @@ function App() {
       <TopBar />
       <Intro />
       <Projects />
+      <About />
       <div style={{ marginTop: "70px", marginBottom: "70px" }}>
         <img
+          id="contact"
           style={{ borderRadius: "500px" }}
           src={gitHubImageURL}
           alt="Github profile image"
