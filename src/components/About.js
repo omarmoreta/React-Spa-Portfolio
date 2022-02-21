@@ -3,6 +3,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import njit from "../videos/NJIT.mp4";
+import resume from "../videos/Resume.mp4";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter } from "react-router-dom";
+import phaser from "../videos/PhaserGame.mp4";
 
 const About = () => {
   return (
@@ -12,59 +17,104 @@ const About = () => {
         <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
           <Row xs={1} md={3}>
             <Col>
-              <Card border="secondary" className="mb-3">
-                <Card.Img variant="top" src="http://placekitten.com/160/100" />
+              <Card border="primary" className="mb-3">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  alt="restaurant review application"
+                  type="video/mp4"
+                >
+                  <source src={phaser} type="video/mp4" />
+                </video>
                 <Card.Body>
                   <Card.Title>Experience</Card.Title>
                   <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Full-stack developer open to new opportunities. Volunteering
+                    at a local high school to help students learn Python as a
+                    TEALS volunteer.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <a
+                    href="https://www.linkedin.com/in/moretaomar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="primary" size="lg">
+                      LinkedIn
+                    </Button>
+                  </a>
                 </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">
-                    <Button variant="primary">Go somewhere</Button>
-                  </small>
-                </Card.Footer>
+                <Card.Footer>Open to Work</Card.Footer>
               </Card>
             </Col>
             <Col>
-              <Card border="secondary" className="mb-3">
-                <Card.Img variant="top" src="http://placekitten.com/160/100" />
+              <Card border="danger" className="mb-3">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  alt="restaurant review application"
+                  type="video/mp4"
+                >
+                  <source src={njit} type="video/mp4" />
+                </video>
                 <Card.Body>
                   <Card.Title>Education</Card.Title>
                   <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Software Development bootcamp student at the New Jersey
+                    Institute of Technology. Shared some of my experiences in an
+                    interview.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <a
+                    href="https://www.youtube.com/watch?v=1DB9S8GyURc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="danger" size="lg">
+                      NJIT
+                    </Button>
+                  </a>
                 </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">
-                    <Button variant="primary">Go somewhere</Button>
-                  </small>
-                </Card.Footer>
+                <Card.Footer>Completion: May 2022</Card.Footer>
               </Card>
             </Col>
             <Col>
               <Card border="secondary" className="mb-3">
-                <Card.Img variant="top" src="http://placekitten.com/160/100" />
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  alt="restaurant review application"
+                  type="video/mp4"
+                >
+                  <source src={resume} type="video/mp4" />
+                </video>
                 <Card.Body>
                   <Card.Title>Resume</Card.Title>
                   <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    If you would like a copy of my resume, please click request.
+                    Complete the contact form and I will get back to you as soon
+                    as possible.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <BrowserRouter>
+                    <HashLink
+                      smooth
+                      to="#contact"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      <Button id="contact" size="lg" variant="secondary">
+                        Request
+                      </Button>
+                    </HashLink>
+                  </BrowserRouter>
                 </Card.Body>
                 <Card.Footer>
-                  <small className="text-muted">
-                    <Button variant="primary">Go somewhere</Button>
-                  </small>
+                  Updated Feb. 17<sup>th</sup>, 2022
                 </Card.Footer>
               </Card>
             </Col>

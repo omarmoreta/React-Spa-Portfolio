@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Button from "react-bootstrap/Button";
 import TopBar from "./components/TopBar";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -8,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [gitHubName, setGitHubName] = useState("");
   const [gitHubURL, setGitHubURL] = useState("");
   const [gitHubImageURL, setGitHubImageURL] = useState("");
 
@@ -16,6 +18,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        setGitHubName(data.name);
         setGitHubURL(data.html_url);
         setGitHubImageURL(data.avatar_url);
       });
@@ -27,9 +30,9 @@ function App() {
       <Intro />
       <Projects />
       <About />
+      <h1>{gitHubName}</h1>
       <div style={{ marginTop: "70px", marginBottom: "70px" }}>
         <img
-          id="contact"
           style={{ borderRadius: "500px", maxWidth: "370px" }}
           src={gitHubImageURL}
           alt="Github profile image"
@@ -38,7 +41,9 @@ function App() {
         <br />
         <div>
           <a href={gitHubURL} target="_blank">
-            <button>GitHub</button>
+            <Button variant="secondary" size="lg">
+              GitHub
+            </Button>
           </a>
         </div>
       </div>

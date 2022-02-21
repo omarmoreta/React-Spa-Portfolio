@@ -8,15 +8,15 @@ const TopBar = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar bg="light" expand="lg" fixed="top">
+        <Navbar bg="dark" expand="lg" fixed="top">
           <Container fluid>
-            <Navbar.Brand
-              style={{ color: "gray", fontFamily: "Lucida Sans" }}
-              href="#"
-            >
+            <Navbar.Brand style={{ color: "white" }} href="#">
               OMAR MORETA
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Toggle
+              style={{ color: "white" }}
+              aria-controls="navbarScroll"
+            />
             <Navbar.Collapse id="navbarScroll">
               <Nav
                 className="me-auto my-2 my-lg-0"
@@ -25,51 +25,45 @@ const TopBar = () => {
               ></Nav>
               <Nav
                 style={{
-                  fontFamily: "Lucida Sans",
-                  textDecoration: "none",
                   justifyContent: "end",
                 }}
               >
                 <NavHashLink
+                  smooth
                   to="#home"
                   style={{
-                    fontFamily: "Lucida Sans",
-                    color: "gray",
+                    color: "white",
                     padding: "5px",
-                    textDecoration: "none",
                   }}
                 >
                   HOME
                 </NavHashLink>
                 <NavHashLink
+                  smooth
                   to="#projects"
                   style={{
-                    fontFamily: "Lucida Sans",
-                    color: "gray",
+                    color: "white",
                     padding: "5px",
-                    textDecoration: "none",
                   }}
                 >
                   PROJECTS
                 </NavHashLink>
                 <NavHashLink
+                  smooth
                   to="#about"
                   style={{
-                    fontFamily: "Lucida Sans",
-                    color: "gray",
+                    color: "white",
                     padding: "5px",
-                    textDecoration: "none",
                   }}
                 >
                   ABOUT
                 </NavHashLink>
                 <NavHashLink
+                  smooth
                   to="#contact"
                   style={{
-                    fontFamily: "Lucida Sans",
-                    color: "gray",
+                    color: "white",
                     padding: "5px",
-                    textDecoration: "none",
                   }}
                 >
                   CONTACT
