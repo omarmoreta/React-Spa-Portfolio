@@ -4,6 +4,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import blackjack from "../images/blackjack.gif";
+import restrant from "../images/rest-rant.gif";
+import phaser from "../images/phaser.gif";
 
 const Projects = () => {
   return (
@@ -51,7 +53,7 @@ const Projects = () => {
           </Col>
           <Col>
             <Card border="info" className="mb-3">
-              <Card.Img variant="top" src="http://placekitten.com/160/100" />
+              <Card.Img variant="top" src={restrant} />
               <Card.Body>
                 <Card.Title>REST-rant</Card.Title>
                 <Card.Text style={{ fontFamily: "Lucida Sans" }}>
@@ -84,24 +86,29 @@ const Projects = () => {
             </Card>
           </Col>
           <Col>
-            <Card border="secondary" className="mb-3">
-              <Card.Img variant="top" src="http://placekitten.com/160/100" />
+            <Card border="warning" className="mb-3">
+              <Card.Img variant="top" src={phaser} />
               <Card.Body>
-                <Card.Title>Project 3</Card.Title>
+                <Card.Title>RPG Phaser Game</Card.Title>
                 <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Collaborating on a functional and captivationg RPG Phaser game
+                  with NJIT Software Development Bootcamp classmate.
                 </Card.Text>
-                <Button variant="secondary" size="md">
-                  Button
+                <Button variant="warning" size="md">
+                  Coming Soon
                 </Button>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">
-                  <Button variant="secondary" size="md">
-                    GitHub
-                  </Button>
+                  <a
+                    href="https://github.com/Gaalmonte/Phaser-Game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="secondary" size="md">
+                      GitHub
+                    </Button>
+                  </a>
                 </small>
               </Card.Footer>
             </Card>
