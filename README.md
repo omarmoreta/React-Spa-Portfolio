@@ -1,4 +1,4 @@
-# React SPA project
+# React SPA Portfolio
 
 A portfolio made with React and bootstrap.
 
