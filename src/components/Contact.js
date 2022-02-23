@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
@@ -8,9 +7,9 @@ import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-const contact = React.lazy(() => import("../images/contact.jpg"));
-const logo = React.lazy(() => import("../images/OMlogo.jpg"));
-const mobileContact = React.lazy(() => import("../images/mobileContact.webp"));
+import mobileContact from "../images/mobileContact.webp";
+import contact from "../images/contact.jpg";
+import logo from "../images/OMlogo.jpg";
 
 const Contact = () => {
   const form = useRef();
