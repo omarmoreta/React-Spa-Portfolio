@@ -11,33 +11,30 @@ import logo from "../images/OMlogo.jpg";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
-// import dotenv from "dotenv";
-
-// CONFIGURATION;
-// dotenv.config();
-// console.log(process.env);
-
-// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
-// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-// const USER_ID = process.env.REACT_APP_USER_ID;
-
 const Contact = () => {
-  //   const form = useRef();
+  const form = useRef();
 
-  //   const sendEmail = (e) => {
-  //     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //     e.target.reset();
-  //     alert("Email was was submitted!");
-  //   };
+    emailjs
+      .sendForm(
+        "gmail",
+        "Portfolio",
+        form.current,
+        "user_GIi8LXDh6SEAlZ5rawr0e"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    alert("Email was was submitted!");
+  };
 
   return (
     <div>
@@ -51,74 +48,68 @@ const Contact = () => {
           <Card.Title>
             <h1 id="contactME">Contact Me</h1>
           </Card.Title>
-          <Card.Text>
-            <div>
-              <p style={{ color: "red" }}>Fields marked with * are required.</p>
-              <form
-                // ref={form}
-                // onSubmit={sendEmail}
-                style={{ marginTop: "30px" }}
-              >
-                <label htmlFor="name">Name*</label>
-                <br />
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Justin Case"
-                  pattern="[a-zA-Z]+"
-                  required
-                />
+          <div>
+            <p style={{ color: "red" }}>Fields marked with * are required.</p>
+            <form ref={form} onSubmit={sendEmail} style={{ marginTop: "30px" }}>
+              <label htmlFor="name">Name*</label>
+              <br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Justin Case"
+                pattern="[a-zA-Z\s]+"
+                required
+              />
 
-                <br />
-                <label htmlFor="email">Email*</label>
-                <br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="JustinCase@mail.com"
-                  pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-                  required
-                />
+              <br />
+              <label htmlFor="email">Email*</label>
+              <br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="JustinCase@mail.com"
+                pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                required
+              />
 
-                <br />
-                <label htmlFor="subject">Subject</label>
-                <br />
-                <select size="1">
-                  <option id="subject" name="subject" value="business">
-                    Business
-                  </option>
-                  <option id="subject" name="subject" value="employment">
-                    Employment
-                  </option>
-                  <option id="subject" name="subject" value="networking">
-                    Networking
-                  </option>
-                  <option id="subject" name="subject" value="more info">
-                    More Info
-                  </option>
-                </select>
-                <br />
-                <label htmlFor="message">Message*</label>
-                <br />
-                <textarea
-                  name="message"
-                  name="message"
-                  type="text"
-                  placeholder="Hi there,
-          Thank you for reach out! I will respond back as soon as 
-          Best,
-          Omar"
-                  rows="5"
-                  cols="50"
-                  required
-                ></textarea>
-                <br />
-                <Button as="input" type="submit" value="Submit" />
-              </form>
-            </div>
-          </Card.Text>
+              <br />
+              <label htmlFor="subject">Subject</label>
+              <br />
+              <select size="1">
+                <option id="subject" name="subject" value="business">
+                  Business
+                </option>
+                <option id="subject" name="subject" value="employment">
+                  Employment
+                </option>
+                <option id="subject" name="subject" value="networking">
+                  Networking
+                </option>
+                <option id="subject" name="subject" value="more info">
+                  More Info
+                </option>
+              </select>
+              <br />
+              <label htmlFor="message">Message*</label>
+              <br />
+              <textarea
+                name="message"
+                name="message"
+                type="text"
+                placeholder="Hi there,
+                              Thank you for reach out! I will respond back as soon as 
+                              Best,
+                              Omar"
+                rows="5"
+                cols="50"
+                required
+              ></textarea>
+              <br />
+              <Button as="input" type="submit" value="Submit" />
+            </form>
+          </div>
           <div style={{ marginTop: "135px" }}>
             <BrowserRouter>
               <Navbar bg="secondary">
@@ -150,7 +141,6 @@ const Contact = () => {
                       <img src={logo} />
                       <p style={{ color: "white" }}> &#169; 2022</p>
                     </Nav>
-                    <div></div>
                     <NavHashLink smooth to="#about">
                       <Button variant="secondary" size="sm">
                         ABOUT

@@ -1,3 +1,4 @@
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -13,9 +14,7 @@ const TopBar = () => {
         <Navbar bg="secondary" expand="lg" fixed="top">
           <Container fluid>
             <Navbar.Brand style={{ color: "white" }} href="#">
-              <Button variant="secondary" size="sm">
-                <img src={logo} />
-              </Button>
+              <img src={logo} />
             </Navbar.Brand>
             <Navbar.Toggle
               style={{ color: "white" }}

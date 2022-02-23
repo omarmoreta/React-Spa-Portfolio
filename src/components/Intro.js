@@ -22,9 +22,7 @@ const Intro = () => {
           <Card.Title>
             <h1>Hello, my name is Omar</h1>
           </Card.Title>
-          <Card.Text>
-            <h2>I am a full-stack software developer.</h2>
-          </Card.Text>
+          <h2>I am a full-stack software developer.</h2>
         </Card.ImgOverlay>
       </Card>
     </div>
