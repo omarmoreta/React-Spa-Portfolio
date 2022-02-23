@@ -5,30 +5,28 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import mobileContact from "../images/mobileContact.webp";
 import contact from "../images/contact.jpg";
+import env from "react-dotenv";
 
 const Contact = () => {
   const Footer = React.lazy(() => import("./Footer"));
 
   const form = useRef();
 
+  const EMAIL_ID = process.env.REACT_APP_EMAIL_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "Portfolio",
-        form.current,
-        "user_GIi8LXDh6SEAlZ5rawr0e"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(EMAIL_ID, TEMPLATE_ID, form.current, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     e.target.reset();
     alert("Email was was submitted! I will reach out as soon as possible!");
   };
@@ -38,11 +36,11 @@ const Contact = () => {
       <Card style={{ border: "none" }}>
         <Card.Img style={{ objectFit: "scale-down" }} />
         <source
-          srcSet={contact}
-          alt="contact banner"
+          src-set={mobileContact}
+          alt="mobile banner"
           media="(min-width: 800px)"
         />
-        <img src={mobileContact} alt="mobile banner" />
+        <img src={contact} alt="contact banner" />
 
         <Card.ImgOverlay>
           <Card.Title>
@@ -70,12 +68,14 @@ const Contact = () => {
                 id="email"
                 name="email"
                 placeholder="JustinCase@mail.com"
-                pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
                 required
               />
 
               <br />
-              <label htmlFor="subject">Subject</label>
+              <label name="subject" htmlFor="subject">
+                Subject
+              </label>
               <br />
               <select size="1">
                 <option id="subject1" name="subject" value="business">

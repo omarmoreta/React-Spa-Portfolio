@@ -14,10 +14,15 @@ const Intro = () => {
         }}
       >
         <Card.Img style={{ marginTop: "230px", objectFit: "none" }} />
-        <source srcSet={banner} alt="intro banner" media="(min-width: 800px)" />
-        <img src={bannerMobile} alt="mobile banner" />
+        <source
+          src-set={bannerMobile}
+          alt="mobile banner"
+          media="(min-width: 800px)"
+        />
+        <img src={banner} alt="intro banner" />
 
         <Card.ImgOverlay
+          alt="card container for overlay"
           style={{ color: "black", marginTop: "100px", fontSize: "30px" }}
         >
           <Card.Title>

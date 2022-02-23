@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import logo from "../images/OMlogo.jpg";
+import logoMobile from "../images/Omobile.webp";
 
 const Footer = () => {
   return (
@@ -41,8 +42,12 @@ const Footer = () => {
                 }}
                 href="#"
               >
+                <source
+                  src-set={logoMobile}
+                  alt="mobile logo"
+                  media="(min-width: 800px)"
+                />
                 <img src={logo} alt="OM logo" />
-                <p style={{ color: "white" }}>&#169;</p>
               </Nav>
             </Nav>
           </Container>

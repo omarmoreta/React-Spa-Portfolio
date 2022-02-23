@@ -15,8 +15,12 @@ const TopBar = () => {
         <Navbar bg="secondary" expand="lg" fixed="top">
           <Container fluid>
             <Navbar.Brand style={{ color: "white" }} href="#">
-              <source srcSet={logo} alt="OM logo" media="(min-width: 800px)" />
-              <img src={logoMobile} alt="mobile logo" />
+              <source
+                src-set={logoMobile}
+                alt="mobile logo"
+                media="(min-width: 800px)"
+              />
+              <img src={logo} alt="OM logo" />
             </Navbar.Brand>
             <Navbar.Toggle
               style={{ color: "white" }}
