@@ -11,21 +11,19 @@ const About = () => {
   return (
     <div>
       <h1 id="about">About Me</h1>
-      <div>
-        <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
-          <Row xs={1} md={3}>
-            <Col>
-              <Experience />
-            </Col>
-            <Col>
-              <Education />
-            </Col>
-            <Col>
-              <Resume />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
+        <Row xs={1} md={3}>
+          <Col>
+            <Experience />
+          </Col>
+          <Col>
+            <Education />
+          </Col>
+          <Col>
+            <Resume />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
