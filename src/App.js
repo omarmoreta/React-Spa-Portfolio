@@ -6,7 +6,6 @@ import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 function App() {
   const [gitHubName, setGitHubName] = useState("");
@@ -30,25 +29,26 @@ function App() {
       <Intro />
       <Projects />
       <About />
-      <h1>{gitHubName}</h1>
-      <div style={{ marginTop: "70px", marginBottom: "70px" }}>
-        <img
-          style={{ borderRadius: "500px", maxWidth: "370px" }}
-          src={gitHubImageURL}
-          alt="Github profile image"
-        />
-        <br />
-        <br />
-        <div>
-          <a href={gitHubURL} target="_blank">
-            <Button variant="secondary" size="lg">
-              GitHub
-            </Button>
-          </a>
+      <div>
+        <h1>{gitHubName}</h1>
+        <div style={{ marginTop: "70px", marginBottom: "70px" }}>
+          <img
+            style={{ borderRadius: "500px", maxWidth: "370px" }}
+            src={gitHubImageURL}
+            alt="Github profile image"
+          />
+          <br />
+          <br />
+          <div>
+            <a href={gitHubURL} target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary" size="lg">
+                GitHub
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
       <Contact />
-      <Footer />
     </div>
   );
 }

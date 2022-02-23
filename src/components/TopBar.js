@@ -3,15 +3,19 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import logo from "../images/OMlogo.jpg";
 
 const TopBar = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar bg="dark" expand="lg" fixed="top">
+        <Navbar bg="secondary" expand="lg" fixed="top">
           <Container fluid>
             <Navbar.Brand style={{ color: "white" }} href="#">
-              OMAR MORETA
+              <Button variant="secondary" size="sm">
+                <img src={logo} />
+              </Button>
             </Navbar.Brand>
             <Navbar.Toggle
               style={{ color: "white" }}
@@ -36,7 +40,9 @@ const TopBar = () => {
                     padding: "5px",
                   }}
                 >
-                  HOME
+                  <Button variant="secondary" size="md">
+                    HOME
+                  </Button>
                 </NavHashLink>
                 <NavHashLink
                   smooth
@@ -46,7 +52,9 @@ const TopBar = () => {
                     padding: "5px",
                   }}
                 >
-                  PROJECTS
+                  <Button variant="secondary" size="md">
+                    PROJECTS
+                  </Button>
                 </NavHashLink>
                 <NavHashLink
                   smooth
@@ -56,7 +64,9 @@ const TopBar = () => {
                     padding: "5px",
                   }}
                 >
-                  ABOUT
+                  <Button variant="secondary" size="md">
+                    ABOUT
+                  </Button>
                 </NavHashLink>
                 <NavHashLink
                   smooth
@@ -66,7 +76,9 @@ const TopBar = () => {
                     padding: "5px",
                   }}
                 >
-                  CONTACT
+                  <Button variant="secondary" size="md">
+                    CONTACT
+                  </Button>
                 </NavHashLink>
               </Nav>
             </Navbar.Collapse>

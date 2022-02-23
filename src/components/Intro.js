@@ -7,16 +7,17 @@ const Intro = () => {
       <Card
         style={{
           fontSize: "100px",
-          marginBottom: "60px",
+          marginBottom: "50px",
+          border: "none",
         }}
       >
         <Card.Img
           src={banner}
           alt="intro banner"
-          style={{ marginTop: "230px", objectFit: "cover" }}
+          style={{ marginTop: "230px", objectFit: "none" }}
         />
         <Card.ImgOverlay
-          style={{ color: "black", marginTop: "70px", fontSize: "30px" }}
+          style={{ color: "black", marginTop: "100px", fontSize: "30px" }}
         >
           <Card.Title>
             <h1>Hello, my name is Omar</h1>
