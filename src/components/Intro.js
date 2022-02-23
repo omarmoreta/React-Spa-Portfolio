@@ -1,5 +1,6 @@
 import Card from "react-bootstrap/Card";
-import banner from "../images/intro-banner.png";
+import banner from "../images/intro-banner.jpg";
+import bannerMobile from "../images/BannerMobile.webp";
 
 const Intro = () => {
   return (
@@ -11,11 +12,10 @@ const Intro = () => {
           border: "none",
         }}
       >
-        <Card.Img
-          src={banner}
-          alt="intro banner"
-          style={{ marginTop: "230px", objectFit: "none" }}
-        />
+        <Card.Img style={{ marginTop: "230px", objectFit: "none" }} />
+        <source srcSet={banner} alt="intro banner" media="(min-width: 800px)" />
+        <img src={bannerMobile} alt="mobile banner" />
+
         <Card.ImgOverlay
           style={{ color: "black", marginTop: "100px", fontSize: "30px" }}
         >

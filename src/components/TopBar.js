@@ -6,6 +6,7 @@ import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import logo from "../images/OMlogo.jpg";
+import logoMobile from "../images/Omobile.webp";
 
 const TopBar = () => {
   return (
@@ -14,7 +15,8 @@ const TopBar = () => {
         <Navbar bg="secondary" expand="lg" fixed="top">
           <Container fluid>
             <Navbar.Brand style={{ color: "white" }} href="#">
-              <img src={logo} />
+              <source srcSet={logo} alt="OM logo" media="(min-width: 800px)" />
+              <img src={logoMobile} alt="mobile logo" />
             </Navbar.Brand>
             <Navbar.Toggle
               style={{ color: "white" }}
@@ -32,8 +34,8 @@ const TopBar = () => {
                 }}
               >
                 <NavHashLink
-                  smooth
                   to="#home"
+                  smooth
                   style={{
                     color: "white",
                     padding: "5px",
@@ -44,8 +46,8 @@ const TopBar = () => {
                   </Button>
                 </NavHashLink>
                 <NavHashLink
-                  smooth
                   to="#projects"
+                  smooth
                   style={{
                     color: "white",
                     padding: "5px",
@@ -56,8 +58,8 @@ const TopBar = () => {
                   </Button>
                 </NavHashLink>
                 <NavHashLink
-                  smooth
                   to="#about"
+                  smooth
                   style={{
                     color: "white",
                     padding: "5px",
@@ -68,8 +70,8 @@ const TopBar = () => {
                   </Button>
                 </NavHashLink>
                 <NavHashLink
-                  smooth
                   to="#contactME"
+                  smooth
                   style={{
                     color: "white",
                     padding: "5px",

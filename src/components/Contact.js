@@ -4,12 +4,12 @@ import contact from "../images/contact.jpg";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropDown";
 import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import logo from "../images/OMlogo.jpg";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import mobileContact from "../images/mobileContact.webp";
 
 const Contact = () => {
   const form = useRef();
@@ -39,11 +39,14 @@ const Contact = () => {
   return (
     <div>
       <Card style={{ border: "none" }}>
-        <Card.Img
-          src={contact}
+        <Card.Img style={{ objectFit: "scale-down" }} />
+        <source
+          srcSet={contact}
           alt="contact banner"
-          style={{ objectFit: "scale-down" }}
+          media="(min-width: 800px)"
         />
+        <img src={mobileContact} alt="mobile banner" />
+
         <Card.ImgOverlay>
           <Card.Title>
             <h1 id="contactME">Contact Me</h1>
@@ -78,16 +81,16 @@ const Contact = () => {
               <label htmlFor="subject">Subject</label>
               <br />
               <select size="1">
-                <option id="subject" name="subject" value="business">
+                <option id="subject1" name="subject" value="business">
                   Business
                 </option>
-                <option id="subject" name="subject" value="employment">
+                <option id="subject2" name="subject" value="employment">
                   Employment
                 </option>
-                <option id="subject" name="subject" value="networking">
+                <option id="subject3" name="subject" value="networking">
                   Networking
                 </option>
-                <option id="subject" name="subject" value="more info">
+                <option id="subject4" name="subject" value="more info">
                   More Info
                 </option>
               </select>
@@ -95,7 +98,6 @@ const Contact = () => {
               <label htmlFor="message">Message*</label>
               <br />
               <textarea
-                name="message"
                 name="message"
                 type="text"
                 placeholder="Hi there,
@@ -131,6 +133,11 @@ const Contact = () => {
                         PROJECTS
                       </Button>
                     </NavHashLink>
+                    <NavHashLink smooth to="#about">
+                      <Button variant="secondary" size="sm">
+                        ABOUT
+                      </Button>
+                    </NavHashLink>
                     <Nav
                       style={{
                         paddingLeft: "20px",
@@ -138,19 +145,9 @@ const Contact = () => {
                       }}
                       href="#"
                     >
-                      <img src={logo} />
-                      <p style={{ color: "white" }}> &#169; 2022</p>
+                      <img src={logo} alt="OM logo" />
+                      <p style={{ color: "white" }}>&#169;</p>
                     </Nav>
-                    <NavHashLink smooth to="#about">
-                      <Button variant="secondary" size="sm">
-                        ABOUT
-                      </Button>
-                    </NavHashLink>
-                    <NavHashLink smooth to="#github">
-                      <Button variant="secondary" size="sm">
-                        CONTACT
-                      </Button>
-                    </NavHashLink>
                   </Nav>
                 </Container>
               </Navbar>
