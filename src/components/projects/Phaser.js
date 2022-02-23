@@ -6,16 +6,18 @@ import phaser from "../../videos/PhaserGame.mp4";
 const Phaser = () => {
   return (
     <Card border="warning" className="mb-3">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="RPG Phaser Game"
-        type="video/mp4"
-      >
-        <source src={phaser} type="video/mp4" />
-      </video>
+      <Card>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="RPG Phaser Game"
+          type="video/mp4"
+        >
+          <source src={phaser} type="video/mp4" />
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>RPG Phaser Game</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>

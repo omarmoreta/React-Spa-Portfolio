@@ -36,12 +36,7 @@ const Footer = () => {
                   ABOUT
                 </Button>
               </NavHashLink>
-              <Nav
-                style={{
-                  paddingLeft: "150px",
-                }}
-                href="#"
-              >
+              <Nav href="#">
                 <source
                   src-set={logoMobile}
                   alt="mobile logo"

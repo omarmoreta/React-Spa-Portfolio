@@ -6,16 +6,18 @@ import blackjack from "../../videos/BlackJack.mp4";
 const Blackjack = () => {
   return (
     <Card border="success" className="mb-3">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="blackjack web game"
-        type="video/mp4"
-      >
-        <source src={blackjack} type="video/mp4" />
-      </video>
+      <Card>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="blackjack web game"
+          type="video/mp4"
+        >
+          <source src={blackjack} type="video/mp4" />
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>BlackJack</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>
