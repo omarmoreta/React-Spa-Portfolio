@@ -1,17 +1,14 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import { NavHashLink } from "react-router-hash-link";
-import { BrowserRouter } from "react-router-dom";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import mobileContact from "../images/mobileContact.webp";
 import contact from "../images/contact.jpg";
-import logo from "../images/OMlogo.jpg";
 
 const Contact = () => {
+  const Footer = React.lazy(() => import("./Footer"));
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -33,7 +30,7 @@ const Contact = () => {
         }
       );
     e.target.reset();
-    alert("Email was was submitted!");
+    alert("Email was was submitted! I will reach out as soon as possible!");
   };
 
   return (
@@ -111,47 +108,7 @@ const Contact = () => {
               <br />
               <Button as="input" type="submit" value="Submit" />
             </form>
-          </div>
-          <div style={{ marginTop: "135px" }}>
-            <BrowserRouter>
-              <Navbar bg="secondary">
-                <Container
-                  style={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                    color: "white",
-                  }}
-                >
-                  <Nav>
-                    <NavHashLink smooth to="#home">
-                      <Button variant="secondary" size="sm">
-                        HOME
-                      </Button>
-                    </NavHashLink>
-                    <NavHashLink smooth to="#projects">
-                      <Button variant="secondary" size="sm">
-                        PROJECTS
-                      </Button>
-                    </NavHashLink>
-                    <NavHashLink smooth to="#about">
-                      <Button variant="secondary" size="sm">
-                        ABOUT
-                      </Button>
-                    </NavHashLink>
-                    <Nav
-                      style={{
-                        paddingLeft: "20px",
-                        paddingRight: "20px",
-                      }}
-                      href="#"
-                    >
-                      <img src={logo} alt="OM logo" />
-                      <p style={{ color: "white" }}>&#169;</p>
-                    </Nav>
-                  </Nav>
-                </Container>
-              </Navbar>
-            </BrowserRouter>
+            <Footer />
           </div>
         </Card.ImgOverlay>
       </Card>

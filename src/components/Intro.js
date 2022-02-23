@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import banner from "../images/intro-banner.jpg";
 import bannerMobile from "../images/BannerMobile.webp";
