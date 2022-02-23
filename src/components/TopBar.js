@@ -70,7 +70,7 @@ const TopBar = () => {
                 </NavHashLink>
                 <NavHashLink
                   smooth
-                  to="#contact"
+                  to="#contactME"
                   style={{
                     color: "white",
                     padding: "5px",

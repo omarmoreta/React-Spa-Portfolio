@@ -1,39 +1,43 @@
-import "dotenv/config";
-import express from "express";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import contact from "../images/contact.jpg";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropDown";
 import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import logo from "../images/OMlogo.jpg";
-import emailjs from "emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 
+// import dotenv from "dotenv";
+
+// CONFIGURATION;
+// dotenv.config();
+// console.log(process.env);
+
+// const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+// const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+// const USER_ID = process.env.REACT_APP_USER_ID;
+
 const Contact = () => {
-  const form = useRef();
+  //   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  //   const sendEmail = (e) => {
+  //     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_USER_ID"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  //     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //     e.target.reset();
+  //     alert("Email was was submitted!");
+  //   };
 
   return (
     <div>
@@ -45,15 +49,17 @@ const Contact = () => {
         />
         <Card.ImgOverlay>
           <Card.Title>
-            <h1>Contact Me</h1>
+            <h1 id="contactME">Contact Me</h1>
           </Card.Title>
           <Card.Text>
             <div>
               <p style={{ color: "red" }}>Fields marked with * are required.</p>
-              <form onSubmit={ContactMe} style={{ marginTop: "30px" }}>
-                <label style={{}} htmlFor="name">
-                  Name*
-                </label>
+              <form
+                // ref={form}
+                // onSubmit={sendEmail}
+                style={{ marginTop: "30px" }}
+              >
+                <label htmlFor="name">Name*</label>
                 <br />
                 <input
                   type="text"
@@ -97,7 +103,6 @@ const Contact = () => {
                 <label htmlFor="message">Message*</label>
                 <br />
                 <textarea
-                  id="contact"
                   name="message"
                   name="message"
                   type="text"
@@ -114,9 +119,7 @@ const Contact = () => {
               </form>
             </div>
           </Card.Text>
-          <br />
-          <br />
-          <div>
+          <div style={{ marginTop: "135px" }}>
             <BrowserRouter>
               <Navbar bg="secondary">
                 <Container
@@ -147,12 +150,13 @@ const Contact = () => {
                       <img src={logo} />
                       <p style={{ color: "white" }}> &#169; 2022</p>
                     </Nav>
+                    <div></div>
                     <NavHashLink smooth to="#about">
                       <Button variant="secondary" size="sm">
                         ABOUT
                       </Button>
                     </NavHashLink>
-                    <NavHashLink smooth to="#contact">
+                    <NavHashLink smooth to="#github">
                       <Button variant="secondary" size="sm">
                         CONTACT
                       </Button>

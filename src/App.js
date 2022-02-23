@@ -30,7 +30,7 @@ function App() {
       <Projects />
       <About />
       <div>
-        <h1>{gitHubName}</h1>
+        <h1 id="github">{gitHubName}</h1>
         <div style={{ marginTop: "70px", marginBottom: "70px" }}>
           <img
             style={{ borderRadius: "500px", maxWidth: "370px" }}

@@ -7,7 +7,7 @@ import njit from "../videos/NJIT.mp4";
 import resume from "../videos/Resume.mp4";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
-import phaser from "../videos/PhaserGame.mp4";
+import about from "../videos/about.mp4";
 
 const About = () => {
   return (
@@ -23,10 +23,10 @@ const About = () => {
                   loop
                   muted
                   playsInline
-                  alt="restaurant review application"
+                  alt="linkedin and github pages"
                   type="video/mp4"
                 >
-                  <source src={phaser} type="video/mp4" />
+                  <source src={about} type="video/mp4" />
                 </video>
                 <Card.Body>
                   <Card.Title>Experience</Card.Title>
@@ -64,8 +64,8 @@ const About = () => {
                   <Card.Title>Education</Card.Title>
                   <Card.Text style={{ fontFamily: "Lucida Sans" }}>
                     Software Development bootcamp student at the New Jersey
-                    Institute of Technology. Shared some of my experiences in an
-                    interview.
+                    Institute of Technology. I was also a POSSE Foundation
+                    scholar at Bucknell University.
                   </Card.Text>
                   <a
                     href="https://www.youtube.com/watch?v=1DB9S8GyURc"
@@ -102,12 +102,12 @@ const About = () => {
                   <BrowserRouter>
                     <HashLink
                       smooth
-                      to="#contact"
+                      to="#contactME"
                       style={{
                         textDecoration: "none",
                       }}
                     >
-                      <Button id="contact" size="lg" variant="secondary">
+                      <Button size="lg" variant="secondary">
                         Request
                       </Button>
                     </HashLink>
