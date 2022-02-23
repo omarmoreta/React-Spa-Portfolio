@@ -14,6 +14,7 @@ const Blackjack = () => {
           playsInline
           alt="blackjack web game"
           type="video/mp4"
+          className="m-0 p-0"
         >
           <source src={blackjack} type="video/mp4" />
         </video>
@@ -50,3 +51,5 @@ const Blackjack = () => {
 };
 
 export default Blackjack;
+
+// className="mb-3"

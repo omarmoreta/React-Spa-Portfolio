@@ -14,6 +14,7 @@ const Phaser = () => {
           playsInline
           alt="RPG Phaser Game"
           type="video/mp4"
+          className="m-0 p-0"
         >
           <source src={phaser} type="video/mp4" />
         </video>
