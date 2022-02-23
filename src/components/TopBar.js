@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavHashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import logo from "../images/OMlogo.jpg";
-import logoMobile from "../images/Omobile.webp";
+const logo = React.lazy(() => import("../images/OMlogo.jpg"));
+const logoMobile = React.lazy(() => import("../images/Omobile.webp"));
 
 const TopBar = () => {
   return (

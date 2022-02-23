@@ -1,6 +1,7 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
-import banner from "../images/intro-banner.jpg";
-import bannerMobile from "../images/BannerMobile.webp";
+const banner = React.lazy(() => import("../images/intro-banner.jpg"));
+const bannerMobile = React.lazy(() => import("../images/BannerMobile.webp"));
 
 const Intro = () => {
   return (

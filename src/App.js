@@ -3,7 +3,7 @@ import React, { useEffect, useState, Suspense } from "react";
 import Button from "react-bootstrap/Button";
 import TopBar from "./components/TopBar";
 import Intro from "./components/Intro";
-import About from "./components/About";
+const About = React.lazy(() => import("./components/About"));
 const Contact = React.lazy(() => import("./components/Contact"));
 const Projects = React.lazy(() => import("./components/Projects"));
 
@@ -35,7 +35,7 @@ function App() {
             <img
               style={{ borderRadius: "500px", maxWidth: "370px" }}
               src={gitHubImageURL}
-              alt="Github profile image"
+              alt="profile face"
             />
             <br />
             <br />

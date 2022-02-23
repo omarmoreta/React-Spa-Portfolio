@@ -1,11 +1,12 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import blackjack from "../videos/BlackJack.mp4";
-import restrant from "../videos/REST-rant.mp4";
-import phaser from "../videos/PhaserGame.mp4";
+const blackjack = React.lazy(() => import("../videos/BlackJack.mp4"));
+const restrant = React.lazy(() => import("../videos/REST-rant.mp4"));
+const phaser = React.lazy(() => import("../videos/PhaserGame.mp4"));
 
 const Projects = () => {
   return (

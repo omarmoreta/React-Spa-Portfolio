@@ -1,13 +1,14 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import njit from "../videos/NJIT.mp4";
-import resume from "../videos/Resume.mp4";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter } from "react-router-dom";
-import about from "../videos/about.mp4";
+const about = React.lazy(() => import("../videos/about.mp4"));
+const njit = React.lazy(() => import("../videos/NJIT.mp4"));
+const resume = React.lazy(() => import("../videos/Resume.mp4"));
 
 const About = () => {
   return (
