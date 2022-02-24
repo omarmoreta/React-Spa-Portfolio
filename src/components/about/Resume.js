@@ -8,16 +8,19 @@ import resume from "../../videos/Resume.mp4";
 const Resume = () => {
   return (
     <Card border="secondary" className="mb-3">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="restaurant review application"
-        type="video/mp4"
-      >
-        <source src={resume} type="video/mp4" />
-      </video>
+      <Card className="m-0 p-0 ratio-*">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="restaurant review application"
+          type="video/mp4"
+          src={resume}
+        >
+          Video not supported by browser.
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>Resume</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>

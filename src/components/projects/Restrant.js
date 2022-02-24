@@ -6,7 +6,7 @@ import restrant from "../../videos/REST-rant.mp4";
 const Restrant = () => {
   return (
     <Card border="info" className="mb-3">
-      <Card className="m-0 p-0">
+      <Card className="m-0 p-0 ratio-*">
         <video
           autoPlay
           loop
@@ -14,9 +14,9 @@ const Restrant = () => {
           playsInline
           alt="restaurant review application"
           type="video/mp4"
-          className="m-0 p-0"
+          src={restrant}
         >
-          <source src={restrant} type="video/mp4" />
+          Video not supported by browser.
         </video>
       </Card>
       <Card.Body>

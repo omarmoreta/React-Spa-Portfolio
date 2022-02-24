@@ -6,16 +6,19 @@ import about from "../../videos/about.mp4";
 const Experience = () => {
   return (
     <Card border="primary" className="mb-3">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="linkedin and github pages"
-        type="video/mp4"
-      >
-        <source src={about} type="video/mp4" />
-      </video>
+      <Card className="m-0 p-0 ratio-*">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="linkedin and github pages"
+          type="video/mp4"
+          src={about}
+        >
+          Video not supported by browser.
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>Experience</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>

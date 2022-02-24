@@ -6,18 +6,19 @@ import njit from "../../videos/NJIT.mp4";
 const Education = () => {
   return (
     <Card border="danger" className="mb-3">
-      <Card.Img />
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="restaurant review application"
-        type="video/mp4"
-        src={njit}
-      >
-        Video not supported by browser
-      </video>
+      <Card className="m-0 p-0 ratio-*">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="restaurant review application"
+          type="video/mp4"
+          src={njit}
+        >
+          Video not supported by browser
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>Education</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>

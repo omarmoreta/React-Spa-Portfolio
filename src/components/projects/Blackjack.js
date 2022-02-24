@@ -6,7 +6,7 @@ import blackjack from "../../videos/BlackJack.mp4";
 const Blackjack = () => {
   return (
     <Card border="success" className="mb-3">
-      <Card className="m-0 p-0">
+      <Card className="m-0 p-0 ratio-*">
         <video
           autoPlay
           loop
@@ -14,9 +14,9 @@ const Blackjack = () => {
           playsInline
           alt="blackjack web game"
           type="video/mp4"
-          className="m-0 p-0"
+          src={blackjack}
         >
-          <source src={blackjack} type="video/mp4" />
+          Video not supported by browser.
         </video>
       </Card>
       <Card.Body>
