@@ -9,7 +9,7 @@ import resume from "../../videos/Resume.mp4";
 const Resume = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="m-0 p-0 ratio-*">
+      <Card className="card m-0 p-0">
         <video
           autoPlay
           loop
@@ -22,7 +22,7 @@ const Resume = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="secondary" className="mb-3 mt-3">
+      <Card border="secondary" className=" card mb-3 mt-3">
         <Card.Body>
           <Card.Title>Resume</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
