@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <Suspense fallback={<Oval color="#00BFFF" height={200} width={200} />}>
+    <Suspense fallback={<Oval color="#00BFFF" height={40} width={40} />}>
       <div className="App">
         <TopBar />
         <Intro />

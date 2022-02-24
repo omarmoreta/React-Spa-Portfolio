@@ -12,21 +12,24 @@ const Contact = () => {
 
   const form = useRef();
 
-  const EMAIL_ID = process.env.REACT_APP_EMAIL_ID;
-  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-  const USER_ID = process.env.REACT_APP_USER_ID;
-
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(EMAIL_ID, TEMPLATE_ID, form.current, USER_ID).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.staturs, result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     e.target.reset();
     alert("Email was was submitted! I will reach out as soon as possible!");
   };
@@ -91,8 +94,8 @@ const Contact = () => {
                               Thank you for reach out! I will respond back as soon as 
                               Best,
                               Omar"
-                rows="5"
-                cols="50"
+                rows="6"
+                cols="30"
                 required
               ></textarea>
               <br />
