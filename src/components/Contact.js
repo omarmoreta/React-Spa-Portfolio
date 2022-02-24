@@ -73,24 +73,14 @@ const Contact = () => {
               />
 
               <br />
-              <label name="subject" htmlFor="subject">
-                Subject
-              </label>
+              <label htmlFor="Subject">Subject</label>
               <br />
-              <select size="1">
-                <option id="subject1" name="subject" value="business">
-                  Business
-                </option>
-                <option id="subject2" name="subject" value="employment">
-                  Employment
-                </option>
-                <option id="subject3" name="subject" value="networking">
-                  Networking
-                </option>
-                <option id="subject4" name="subject" value="more info">
-                  More Info
-                </option>
-              </select>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Networking"
+              />
               <br />
               <label htmlFor="message">Message*</label>
               <br />
