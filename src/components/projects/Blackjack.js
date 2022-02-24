@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import blackjack from "../../videos/BlackJack.mp4";
 
 const Blackjack = () => {
   return (
-    <Card border="success" className="mb-3">
-      <Card className="m-0 p-0 ratio-*">
+    <Container className="m-0 p-0">
+      <Card className="m-0 p-0">
         <video
           autoPlay
           loop
@@ -19,37 +20,37 @@ const Blackjack = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card.Body>
-        <Card.Title>BlackJack</Card.Title>
-        <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-          A blackjack front-end game built with HTML, CSS, and JavaScript. The
-          game was deployed using netlify.
-        </Card.Text>
-        <a
-          href="https://thirsty-bhaskara-2f67ea.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="success" size="lg">
-            Play
-          </Button>
-        </a>
-      </Card.Body>
-      <Card.Footer>
-        <a
-          href="https://github.com/omarmoreta/blackjack-casino-game"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="dark" size="sm">
-            GitHub
-          </Button>
-        </a>
-      </Card.Footer>
-    </Card>
+      <Card border="success" className="mb-3 mt-3">
+        <Card.Body>
+          <Card.Title>BlackJack</Card.Title>
+          <Card.Text style={{ fontFamily: "Lucida Sans" }}>
+            A blackjack front-end game built with HTML, CSS, and JavaScript. The
+            game was deployed using netlify.
+          </Card.Text>
+          <a
+            href="https://thirsty-bhaskara-2f67ea.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="success" size="lg">
+              Play
+            </Button>
+          </a>
+        </Card.Body>
+        <Card.Footer>
+          <a
+            href="https://github.com/omarmoreta/blackjack-casino-game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="dark" size="sm">
+              GitHub
+            </Button>
+          </a>
+        </Card.Footer>
+      </Card>
+    </Container>
   );
 };
 
 export default Blackjack;
-
-// className="mb-3"
