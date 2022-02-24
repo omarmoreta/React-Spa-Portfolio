@@ -6,7 +6,7 @@ import phaser from "../../videos/PhaserGame.mp4";
 const Phaser = () => {
   return (
     <Card border="warning" className="mb-3">
-      <Card>
+      <Card className="m-0 p-0">
         <video
           autoPlay
           loop

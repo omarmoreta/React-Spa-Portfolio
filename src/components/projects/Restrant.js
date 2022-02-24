@@ -6,18 +6,19 @@ import restrant from "../../videos/REST-rant.mp4";
 const Restrant = () => {
   return (
     <Card border="info" className="mb-3">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        alt="restaurant review application"
-        type="video/mp4"
-        className="m-0 p-0"
-      >
-        <source src={restrant} type="video/mp4" />
-      </video>
-
+      <Card className="m-0 p-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          alt="restaurant review application"
+          type="video/mp4"
+          className="m-0 p-0"
+        >
+          <source src={restrant} type="video/mp4" />
+        </video>
+      </Card>
       <Card.Body>
         <Card.Title>REST-rant</Card.Title>
         <Card.Text style={{ fontFamily: "Lucida Sans" }}>
