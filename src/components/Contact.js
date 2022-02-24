@@ -14,14 +14,21 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(EMAIL_ID, TEMPLATE_ID, form.current, USER_ID).then(
-      (result) => {
-        console.log(result.staturs, result);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_i6l3yvf",
+        form.current,
+        "user_GIi8LXDh6SEAlZ5rawr0e"
+      )
+      .then(
+        (result) => {
+          console.log(result.staturs, result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     e.target.reset();
     alert("Email was was submitted! I will reach out as soon as possible!");
   };
