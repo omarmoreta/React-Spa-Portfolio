@@ -6,6 +6,7 @@ import njit from "../../videos/NJIT.mp4";
 const Education = () => {
   return (
     <Card border="danger" className="mb-3">
+      <Card.Img />
       <video
         autoPlay
         loop
@@ -13,8 +14,9 @@ const Education = () => {
         playsInline
         alt="restaurant review application"
         type="video/mp4"
+        src={njit}
       >
-        <source src={njit} type="video/mp4" />
+        Video not supported by browser
       </video>
       <Card.Body>
         <Card.Title>Education</Card.Title>
