@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import mobileContact from "../images/mobileContact.webp";
 import contact from "../images/contact.jpg";
-import env from "react-dotenv";
 
 const Contact = () => {
   const Footer = React.lazy(() => import("./Footer"));
@@ -17,10 +16,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAIL_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "gmail",
+        "template_i6l3yvf",
         form.current,
-        process.env.REACT_APP_USER_ID
+        "user_GIi8LXDh6SEAlZ5rawr0e"
       )
       .then(
         (result) => {
