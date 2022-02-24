@@ -41,7 +41,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, "react-dotenv": {
-    "whitelist": ["REACT_APP_EMAIL_ID", "REACT_APP_TEMPLATE_ID", "REACT_APP_USER_ID"]
-    }
+  },
+  "react-dotenv": {
+    "whitelist": [
+      "REACT_APP_EMAIL_ID",
+      "REACT_APP_TEMPLATE_ID",
+      "REACT_APP_USER_ID"
+    ]
+  }, 
+  "engines": {
+    "node": "16.13.1"
+  }
 }
