@@ -9,7 +9,7 @@ import resume from "../../videos/Resume.mp4";
 const Resume = () => {
   return (
     <Container>
-      <video width="400" height="auto" autoPlay loop muted playsInline>
+      <video width="380" height="auto" autoPlay loop muted playsInline>
         <source src={resume} type="video/mp4" />
         Your browser does not support the video.
       </video>

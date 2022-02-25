@@ -7,7 +7,7 @@ import restrant from "../../videos/REST-rant.mp4";
 const Restrant = () => {
   return (
     <Container className="m-0 p-0">
-      <video width="400" height="auto" autoPlay loop muted playsInline>
+      <video width="380" height="auto" autoPlay loop muted playsInline>
         <source src={restrant} type="video/mp4" />
         Your browser does not support the video.
       </video>
