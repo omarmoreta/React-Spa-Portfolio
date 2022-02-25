@@ -7,7 +7,7 @@ import phaser from "../../videos/PhaserGame.mp4";
 const Phaser = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-0 p-0">
+      <Card className="card m-3">
         <video
           autoPlay
           loop
@@ -20,7 +20,7 @@ const Phaser = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="warning" className="mb-3 mt-3">
+      <Card border="warning" className="card m-3">
         <Card.Body>
           <Card.Title>RPG Phaser Game</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

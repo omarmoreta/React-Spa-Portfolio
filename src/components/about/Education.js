@@ -7,7 +7,7 @@ import njit from "../../videos/NJIT.mp4";
 const Education = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className=" card m-0 p-0">
+      <Card className="card m-3">
         <video
           autoPlay
           loop
@@ -20,13 +20,12 @@ const Education = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="danger" className=" card mb-3 mt-3">
+      <Card border="danger" className="card m-3">
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
             Software Development bootcamp student at the New Jersey Institute of
-            Technology. I was also a POSSE Foundation scholar at Bucknell
-            University.
+            Technology. Also was POSSE Foundation scholar at Bucknell.
           </Card.Text>
           <a
             href="https://www.youtube.com/watch?v=1DB9S8GyURc"

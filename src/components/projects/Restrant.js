@@ -7,7 +7,7 @@ import restrant from "../../videos/REST-rant.mp4";
 const Restrant = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card">
+      <Card className="card m-3">
         <video
           autoPlay
           loop
@@ -20,7 +20,7 @@ const Restrant = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="info" className="card mb-3 mt-3">
+      <Card border="info" className="card m-3">
         <Card.Body>
           <Card.Title>REST-rant</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

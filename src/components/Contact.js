@@ -23,10 +23,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.staturs, result);
+          console.log(result.status);
         },
         (error) => {
-          console.log(error);
+          console.log(error.status);
         }
       );
     e.target.reset();
@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
     <div>
-      <Card style={{ border: "none" }}>
+      <Card className="card" style={{ border: "none" }}>
         <Card.Img style={{ objectFit: "scale-down" }} />
         <source
           src-set={mobileContact}
@@ -43,7 +43,6 @@ const Contact = () => {
           media="(min-width: 800px)"
         />
         <img src={contact} alt="contact banner" />
-
         <Card.ImgOverlay>
           <Card.Title>
             <h1 id="contactME">Contact Me</h1>
@@ -61,7 +60,6 @@ const Contact = () => {
                 pattern="[a-zA-Z\s]+"
                 required
               />
-
               <br />
               <label htmlFor="email">Email*</label>
               <br />
@@ -73,7 +71,6 @@ const Contact = () => {
                 pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
                 required
               />
-
               <br />
               <label htmlFor="Subject">Subject</label>
               <br />
@@ -90,11 +87,11 @@ const Contact = () => {
                 name="message"
                 type="text"
                 placeholder="Hi there,
-                              Thank you for reach out! I will respond back as soon as 
-                              Best,
-                              Omar"
+                Thank you for reach out! I will respond back as soon as possible.
+                Best,
+                 Omar"
                 rows="6"
-                cols="30"
+                cols="40"
                 required
               ></textarea>
               <br />

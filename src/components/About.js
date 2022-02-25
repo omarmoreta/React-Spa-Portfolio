@@ -1,6 +1,5 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 
 const About = () => {
@@ -13,15 +12,9 @@ const About = () => {
       <h1 id="about">About Me</h1>
       <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
         <Row md={3}>
-          <Col>
-            <Experience />
-          </Col>
-          <Col>
-            <Education />
-          </Col>
-          <Col>
-            <Resume />
-          </Col>
+          <Experience />
+          <Education />
+          <Resume />
         </Row>
       </Container>
     </div>

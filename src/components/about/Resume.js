@@ -9,7 +9,7 @@ import resume from "../../videos/Resume.mp4";
 const Resume = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-0 p-0">
+      <Card className="card m-3">
         <video
           autoPlay
           loop
@@ -22,7 +22,7 @@ const Resume = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="secondary" className=" card mb-3 mt-3">
+      <Card border="secondary" className=" card m-3">
         <Card.Body>
           <Card.Title>Resume</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
@@ -31,13 +31,7 @@ const Resume = () => {
             possible.
           </Card.Text>
           <BrowserRouter>
-            <HashLink
-              smooth
-              to="#contactME"
-              style={{
-                textDecoration: "none",
-              }}
-            >
+            <HashLink smooth to="#contactME" style={{ textDecoration: "none" }}>
               <Button size="lg" variant="secondary">
                 Request
               </Button>

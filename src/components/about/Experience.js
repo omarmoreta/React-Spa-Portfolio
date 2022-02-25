@@ -7,7 +7,7 @@ import about from "../../videos/about.mp4";
 const Experience = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-0 p-0">
+      <Card className="card m-3">
         <video
           autoPlay
           loop
@@ -20,7 +20,7 @@ const Experience = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="primary" className="card mb-3 mt-3">
+      <Card border="primary" className="card m-3">
         <Card.Body>
           <Card.Title>Experience</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
