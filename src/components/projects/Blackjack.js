@@ -8,12 +8,7 @@ const Blackjack = () => {
   return (
     <Container className="m-0 p-0">
       <Card className="m-3">
-        <video
-          style={{ marginTop: "0", marginBottom: "0" }}
-          autoPlay
-          loop
-          muted
-        >
+        <video width="auto" height="auto" autoPlay loop muted playsInline>
           <source src={blackjack} type="video/mp4" />
           Your browser does not support the video.
         </video>

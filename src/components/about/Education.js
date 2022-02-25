@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <Container className="m-0 p-0">
       <Card className="m-3">
-        <video width="320" height="240" autoPlay loop muted>
+        <video width="auto" height="auto" autoPlay loop muted playsInline>
           <source src={njit} type="video/mp4" />
           Your browser does not support the video.
         </video>
