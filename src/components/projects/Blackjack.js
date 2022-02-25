@@ -6,21 +6,19 @@ import blackjack from "../../videos/BlackJack.mp4";
 
 const Blackjack = () => {
   return (
-    <Container>
-      <Card className="card">
+    <Container className="m-0 p-0">
+      <Card className="m-3">
         <video
+          style={{ marginTop: "0", marginBottom: "0" }}
           autoPlay
           loop
           muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={blackjack}
         >
-          Video not supported by browser.
+          <source src={blackjack} type="video/mp4" />
+          Your browser does not support the video.
         </video>
       </Card>
-      <Card border="success" className="card">
+      <Card border="success" className="m-3">
         <Card.Body>
           <Card.Title>BlackJack</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

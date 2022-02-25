@@ -8,25 +8,14 @@ import resume from "../../videos/Resume.mp4";
 
 const Resume = () => {
   return (
-    <Container style={{ backgroundColor: "grey" }} className="m-3">
-      <Card style={{ backgroundColor: "grey" }} className="m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="restaurant review application"
-          type="video/mp4"
-          src={resume}
-        >
-          Video not supported by browser.
+    <Container className="m-0 p-0">
+      <Card className="m-0 p-0">
+        <video width="320" height="240" autoPlay loop muted>
+          <source src={resume} type="video/mp4" />
+          Your browser does not support the video.
         </video>
       </Card>
-      <Card
-        border="secondary"
-        className="m-3"
-        style={{ backgroundColor: "grey" }}
-      >
+      <Card border="secondary" className="m-3">
         <Card.Body>
           <Card.Title>Resume</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

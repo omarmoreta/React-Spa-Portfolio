@@ -16,7 +16,7 @@ const About = () => {
           marginBottom: "50px",
         }}
       >
-        <Row auto xs={1} md={3}>
+        <Row auto sm={1} md={3}>
           <Experience />
           <Education />
           <Resume />
