@@ -6,8 +6,8 @@ import njit from "../../videos/NJIT.mp4";
 
 const Education = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
+    <Container style={{ backgroundColor: "grey" }} className="m-0 p-0">
+      <Card style={{ backgroundColor: "yellow" }} className="m-0 p-0">
         <video
           autoPlay
           loop
@@ -20,7 +20,11 @@ const Education = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="danger" className="card m-3">
+      <Card
+        border="danger"
+        className="m-0 p-0"
+        style={{ backgroundColor: "pink" }}
+      >
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

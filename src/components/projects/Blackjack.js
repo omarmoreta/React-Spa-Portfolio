@@ -6,8 +6,8 @@ import blackjack from "../../videos/BlackJack.mp4";
 
 const Blackjack = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
+    <Container>
+      <Card className="card">
         <video
           autoPlay
           loop
@@ -20,7 +20,7 @@ const Blackjack = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="success" className="card m-3">
+      <Card border="success" className="card">
         <Card.Body>
           <Card.Title>BlackJack</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
