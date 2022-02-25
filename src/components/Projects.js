@@ -12,7 +12,7 @@ const Projects = () => {
     <div>
       <h1 id="projects">Projects</h1>
       <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
-        <Row xs={1} md={3}>
+        <Row md={3}>
           <Col>
             <Blackjack />
           </Col>
