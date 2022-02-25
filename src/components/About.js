@@ -10,8 +10,13 @@ const About = () => {
   return (
     <div>
       <h1 id="about">About Me</h1>
-      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
-        <Row md={3}>
+      <Container
+        style={{
+          marginTop: "50px",
+          marginBottom: "50px",
+        }}
+      >
+        <Row auto xs={1} md={3}>
           <Experience />
           <Education />
           <Resume />

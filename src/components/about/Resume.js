@@ -8,8 +8,8 @@ import resume from "../../videos/Resume.mp4";
 
 const Resume = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
+    <Container style={{ backgroundColor: "grey" }} className="m-3">
+      <Card style={{ backgroundColor: "grey" }} className="m-3">
         <video
           autoPlay
           loop
@@ -22,7 +22,11 @@ const Resume = () => {
           Video not supported by browser.
         </video>
       </Card>
-      <Card border="secondary" className=" card m-3">
+      <Card
+        border="secondary"
+        className="m-3"
+        style={{ backgroundColor: "grey" }}
+      >
         <Card.Body>
           <Card.Title>Resume</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
