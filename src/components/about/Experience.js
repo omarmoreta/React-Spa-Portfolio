@@ -7,7 +7,7 @@ import about from "../../videos/about.mp4";
 const Experience = () => {
   return (
     <Container>
-      <video width="380" height="auto" autoPlay loop muted playsInline>
+      <video width="370" height="auto" autoPlay loop muted playsInline>
         <source src={about} type="video/mp4" />
         Your browser does not support the video.
       </video>

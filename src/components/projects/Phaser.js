@@ -7,7 +7,7 @@ import phaser from "../../videos/PhaserGame.mp4";
 const Phaser = () => {
   return (
     <Container className="m-0 p-0">
-      <video width="380" height="auto" autoPlay loop muted playsInline>
+      <video width="370" height="auto" autoPlay loop muted playsInline>
         <source src={phaser} type="video/mp4" />
         Your browser does not support the video.
       </video>

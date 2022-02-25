@@ -7,7 +7,7 @@ import njit from "../../videos/NJIT.mp4";
 const Education = () => {
   return (
     <Container>
-      <video width="380" height="auto" autoPlay loop muted playsInline>
+      <video width="370" height="auto" autoPlay loop muted playsInline>
         <source src={njit} type="video/mp4" />
         Your browser does not support the video.
       </video>
