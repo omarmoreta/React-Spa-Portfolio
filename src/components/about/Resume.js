@@ -8,7 +8,7 @@ import resume from "../../videos/Resume.mp4";
 
 const Resume = () => {
   return (
-    <Container>
+    <Container className="m-0 p-0">
       <video width="370" height="auto" autoPlay loop muted playsInline>
         <source src={resume} type="video/mp4" />
         Your browser does not support the video.
