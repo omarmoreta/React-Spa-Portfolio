@@ -6,13 +6,7 @@ import bannerMobile from "../images/BannerMobile.webp";
 const Intro = () => {
   return (
     <div id="home">
-      <Card
-        style={{
-          fontSize: "100px",
-          marginBottom: "50px",
-          border: "none",
-        }}
-      >
+      <Card style={{ fontSize: "100px", marginBottom: "50px", border: "none" }}>
         <Card.Img style={{ marginTop: "230px" }} />
         <source
           src-set={bannerMobile}
@@ -20,7 +14,6 @@ const Intro = () => {
           media="(min-width: 800px)"
         />
         <img src={banner} alt="intro banner" style={{ objectFit: "none" }} />
-
         <Card.ImgOverlay
           alt="card container for overlay"
           style={{ color: "black", marginTop: "100px", fontSize: "30px" }}

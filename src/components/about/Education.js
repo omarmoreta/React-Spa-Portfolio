@@ -6,26 +6,17 @@ import njit from "../../videos/NJIT.mp4";
 
 const Education = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={njit}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
+    <Container>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={njit} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
       <Card border="danger" className="card m-3">
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
             Software Development bootcamp student at the New Jersey Institute of
-            Technology. Also was POSSE Foundation scholar at Bucknell.
+            Technology. Prior POSSE Foundation scholar at Bucknell.
           </Card.Text>
           <a
             href="https://www.youtube.com/watch?v=1DB9S8GyURc"

@@ -10,13 +10,8 @@ const Projects = () => {
   return (
     <div>
       <h1 id="projects">Projects</h1>
-      <Container
-        style={{
-          marginTop: "50px",
-          marginBottom: "50px",
-        }}
-      >
-        <Row md={3}>
+      <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
+        <Row fluid xxl={3}>
           <Blackjack />
           <Restrant />
           <Phaser />

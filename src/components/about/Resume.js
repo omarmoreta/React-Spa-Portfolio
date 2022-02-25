@@ -8,27 +8,17 @@ import resume from "../../videos/Resume.mp4";
 
 const Resume = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="restaurant review application"
-          type="video/mp4"
-          src={resume}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
-      <Card border="secondary" className=" card m-3">
+    <Container>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={resume} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
+      <Card border="secondary" className="card m-3">
         <Card.Body>
           <Card.Title>Resume</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            If you would like a copy of my resume, please click request.
-            Complete the contact form and I will get back to you as soon as
-            possible.
+            If you would like a copy of my resume, please click request and fill
+            out form and I will get back to you as soon as possible.
           </Card.Text>
           <BrowserRouter>
             <HashLink smooth to="#contactME" style={{ textDecoration: "none" }}>

@@ -7,19 +7,10 @@ import phaser from "../../videos/PhaserGame.mp4";
 const Phaser = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="RPG Phaser Game"
-          type="video/mp4"
-          src={phaser}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={phaser} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
       <Card border="warning" className="card m-3">
         <Card.Body>
           <Card.Title>RPG Phaser Game</Card.Title>

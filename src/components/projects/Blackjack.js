@@ -7,19 +7,10 @@ import blackjack from "../../videos/BlackJack.mp4";
 const Blackjack = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={blackjack}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={blackjack} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
       <Card border="success" className="card m-3">
         <Card.Body>
           <Card.Title>BlackJack</Card.Title>

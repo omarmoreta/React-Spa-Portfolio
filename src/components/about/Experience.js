@@ -6,27 +6,17 @@ import about from "../../videos/about.mp4";
 
 const Experience = () => {
   return (
-    <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={about}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
+    <Container>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={about} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
       <Card border="primary" className="card m-3">
         <Card.Body>
           <Card.Title>Experience</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Full-stack developer open to new opportunities. Volunteering at a
-            local high school to help students learn Python as a TEALS
-            volunteer.
+            Full-stack developer open to new opportunities. Volunteer, helping
+            students learn Python with TEALS program.
           </Card.Text>
           <a
             href="https://www.linkedin.com/in/moretaomar/"

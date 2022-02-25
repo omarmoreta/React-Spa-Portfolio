@@ -32,18 +32,11 @@ const TopBar = () => {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               ></Nav>
-              <Nav
-                style={{
-                  justifyContent: "end",
-                }}
-              >
+              <Nav style={{ justifyContent: "end" }}>
                 <NavHashLink
                   to="#home"
                   smooth
-                  style={{
-                    color: "white",
-                    padding: "5px",
-                  }}
+                  style={{ color: "white", padding: "5px" }}
                 >
                   <Button variant="secondary" size="md">
                     HOME

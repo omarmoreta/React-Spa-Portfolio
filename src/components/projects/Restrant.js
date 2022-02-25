@@ -7,19 +7,10 @@ import restrant from "../../videos/REST-rant.mp4";
 const Restrant = () => {
   return (
     <Container className="m-0 p-0">
-      <Card className="card m-3">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="restaurant review application"
-          type="video/mp4"
-          src={restrant}
-        >
-          Video not supported by browser.
-        </video>
-      </Card>
+      <video width="400" height="auto" autoPlay loop muted playsInline>
+        <source src={restrant} type="video/mp4" />
+        Your browser does not support the video.
+      </video>
       <Card border="info" className="card m-3">
         <Card.Body>
           <Card.Title>REST-rant</Card.Title>
