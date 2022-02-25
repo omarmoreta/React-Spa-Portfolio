@@ -6,25 +6,14 @@ import njit from "../../videos/NJIT.mp4";
 
 const Education = () => {
   return (
-    <Container style={{ backgroundColor: "grey" }} className="m-0 p-0">
-      <Card style={{ backgroundColor: "yellow" }} className="m-0 p-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={njit}
-        >
-          Video not supported by browser.
+    <Container className="m-0 p-0">
+      <Card className="m-3">
+        <video width="320" height="240" autoPlay loop muted>
+          <source src={njit} type="video/mp4" />
+          Your browser does not support the video.
         </video>
       </Card>
-      <Card
-        border="danger"
-        className="m-0 p-0"
-        style={{ backgroundColor: "pink" }}
-      >
+      <Card border="danger" className="m-3">
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>

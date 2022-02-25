@@ -6,21 +6,14 @@ import about from "../../videos/about.mp4";
 
 const Experience = () => {
   return (
-    <Container style={{ backgroundColor: "grey" }}>
-      <Card style={{ backgroundColor: "yellow" }}>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          alt="blackjack web game"
-          type="video/mp4"
-          src={about}
-        >
-          Video not supported by browser.
+    <Container className="m-0 p-0">
+      <Card className="m-3">
+        <video width="320" height="240" autoPlay loop muted>
+          <source src={about} type="video/mp4" />
+          Your browser does not support the video.
         </video>
       </Card>
-      <Card border="primary" style={{ backgroundColor: "pink" }}>
+      <Card border="primary" className="m-3">
         <Card.Body>
           <Card.Title>Experience</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
