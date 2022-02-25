@@ -90,8 +90,8 @@ const Contact = () => {
                 Thank you for reach out! I will respond back as soon as possible.
                 Best,
                  Omar"
-                rows="6"
-                cols="40"
+                rows="5"
+                cols="30"
                 required
               ></textarea>
               <br />
