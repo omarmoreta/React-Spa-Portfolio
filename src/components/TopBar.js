@@ -1,6 +1,4 @@
 import React from "react";
-import { NavHashLink } from "react-router-hash-link";
-import { BrowserRouter } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,80 +8,47 @@ import logoMobile from "../images/Omobile.webp";
 
 const TopBar = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar bg="secondary" expand="lg" fixed="top">
-          <Container fluid>
-            <Navbar.Brand style={{ color: "white" }} href="#">
-              <source
-                src-set={logoMobile}
-                alt="mobile logo"
-                media="(min-width: 800px)"
-              />
-              <img src={logo} alt="OM logo" />
-            </Navbar.Brand>
-            <Navbar.Toggle
-              style={{ color: "white" }}
-              aria-controls="navbarScroll"
-            />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
-                navbarScroll
-              ></Nav>
-              <Nav style={{ justifyContent: "end" }}>
-                <NavHashLink
-                  to="#home"
-                  smooth
-                  style={{ color: "white", padding: "5px" }}
-                >
-                  <Button variant="secondary" size="md">
-                    HOME
-                  </Button>
-                </NavHashLink>
-                <NavHashLink
-                  to="#projects"
-                  smooth
-                  style={{
-                    color: "white",
-                    padding: "5px",
-                  }}
-                >
-                  <Button variant="secondary" size="md">
-                    PROJECTS
-                  </Button>
-                </NavHashLink>
-                <NavHashLink
-                  to="#about"
-                  smooth
-                  style={{
-                    color: "white",
-                    padding: "5px",
-                  }}
-                >
-                  <Button variant="secondary" size="md">
-                    ABOUT
-                  </Button>
-                </NavHashLink>
-                <NavHashLink
-                  to="#contactME"
-                  smooth
-                  style={{
-                    color: "white",
-                    padding: "5px",
-                  }}
-                >
-                  <Button variant="secondary" size="md">
-                    CONTACT
-                  </Button>
-                </NavHashLink>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </BrowserRouter>
-    </div>
+    <Navbar collapseOnSelect bg="secondary" expand="lg" fixed="top">
+      <Container fluid>
+        <Navbar.Brand style={{ color: "white" }} href="#">
+          <source
+            src-set={logoMobile}
+            alt="mobile logo"
+            media="(min-width: 800px)"
+          />
+          <img src={logo} alt="OM logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          <Nav style={{ color: "white" }}>
+            <Nav.Link href="#home">
+              {" "}
+              <Button variant="secondary" size="md">
+                HOME
+              </Button>
+            </Nav.Link>
+            <Nav.Link href="#projects">
+              {" "}
+              <Button variant="secondary" size="md">
+                PROJECTS
+              </Button>
+            </Nav.Link>
+            <Nav.Link smooth href="#about">
+              {" "}
+              <Button variant="secondary" size="md">
+                ABOUT
+              </Button>
+            </Nav.Link>
+            <Nav.Link smooth href="#contactME">
+              <Button variant="secondary" size="md">
+                CONTACT
+              </Button>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

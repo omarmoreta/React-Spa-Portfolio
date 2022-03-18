@@ -1,6 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState, Suspense } from "react";
-import Button from "react-bootstrap/Button";
+import React, { Suspense } from "react";
 import TopBar from "./components/TopBar";
 import Intro from "./components/Intro";
 import { Oval } from "react-loader-spinner";
@@ -10,20 +9,7 @@ function App() {
   const About = React.lazy(() => import("./components/About"));
   const Contact = React.lazy(() => import("./components/Contact"));
   const Projects = React.lazy(() => import("./components/Projects"));
-
-  const [gitHubName, setGitHubName] = useState("");
-  const [gitHubURL, setGitHubURL] = useState("");
-  const [gitHubImageURL, setGitHubImageURL] = useState("");
-
-  useEffect(() => {
-    fetch("https://api.github.com/users/omarmoreta")
-      .then((res) => res.json())
-      .then((data) => {
-        setGitHubName(data.name);
-        setGitHubURL(data.html_url);
-        setGitHubImageURL(data.avatar_url);
-      });
-  }, []);
+  const Tools = React.lazy(() => import("./components/Tools"));
 
   return (
     <Suspense fallback={<Oval color="#00BFFF" height={40} width={40} />}>
@@ -32,25 +18,7 @@ function App() {
         <Intro />
         <Projects />
         <About />
-        <div>
-          <h1>{gitHubName}</h1>
-          <div style={{ marginTop: "70px", marginBottom: "70px" }}>
-            <img
-              style={{ borderRadius: "500px", maxWidth: "370px" }}
-              src={gitHubImageURL}
-              alt="profile face"
-            />
-            <br />
-            <br />
-            <div>
-              <a href={gitHubURL} target="_blank" rel="noopener noreferrer">
-                <Button variant="secondary" size="lg">
-                  GitHub
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
+        <Tools />
         <Contact />
       </div>
     </Suspense>
