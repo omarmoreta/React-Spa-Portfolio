@@ -1,7 +1,7 @@
 # React SPA Portfolio
 
 A portfolio made with React and bootstrap.
-Deployed on Heroku: https://moreta-portfolio.herokuapp.com/
+Deployed on :
 
 # Getting Started with Create React App
 
