@@ -11,12 +11,20 @@ const Education = () => {
         <source src={njit} type="video/mp4" />
         Your browser does not support the video.
       </video>
-      <Card border="danger" className="card m-3">
+      <Card border="secondary" className="card m-3">
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Software Development bootcamp student at the New Jersey Institute of
-            Technology. Prior POSSE Foundation scholar at Bucknell.
+            Currently attending Rutgers for a Fintech Certificate. Earned
+            Full-Stack Certificate at NJIT.{" "}
+            <a
+              href="https://www.possefoundation.org/shaping-the-future/posse-photo-viewer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Boston POSSE 2
+            </a>{" "}
+            scholar at Bucknell.
           </Card.Text>
           <a
             href="https://www.youtube.com/watch?v=1DB9S8GyURc"
@@ -28,7 +36,7 @@ const Education = () => {
             </Button>
           </a>
         </Card.Body>
-        <Card.Footer>Completion: May 2022</Card.Footer>
+        <Card.Footer>NJIT: May 2022, RU: June 2023</Card.Footer>
       </Card>
     </Container>
   );

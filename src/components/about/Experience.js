@@ -11,12 +11,20 @@ const Experience = () => {
         <source src={about} type="video/mp4" />
         Your browser does not support the video.
       </video>
-      <Card border="primary" className="card m-3">
+      <Card border="secondary" className="card m-3">
         <Card.Body>
           <Card.Title>Experience</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Full-stack developer open to new opportunities. Volunteer, helping
-            students learn Python with TEALS program.
+            Current Automation QE at PNC and Full-Stack Associate Instructor at
+            ThriveDX. Volunteered with the Microsoft{" "}
+            <a
+              href="https://www.credly.com/badges/182fa8fc-148d-474d-8f66-877f97f0e024?source=linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TEALS
+            </a>{" "}
+            program.
           </Card.Text>
           <a
             href="https://www.linkedin.com/in/moretaomar/"
@@ -28,7 +36,7 @@ const Experience = () => {
             </Button>
           </a>
         </Card.Body>
-        <Card.Footer>Open to Work</Card.Footer>
+        <Card.Footer>Open to Opportunities</Card.Footer>
       </Card>
     </Container>
   );

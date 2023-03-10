@@ -33,10 +33,11 @@ const Tools = () => {
             <br />
             <h2>Languages and Tools</h2>
             <br />
-            <h4>HTML | CSS | JavaScript | React</h4>
-            <h4>Express | Node | Redux | MongoDB</h4>
-            <h4>PostgreSQL | Postman | GitHub</h4>
-            <h4>Heroku | Netlify | Bootstrap | Git</h4>
+            <h4>HTML | CSS | JavaScript | Python | Java</h4>
+            <h4>Express | Node | React | Flask</h4>
+            <h4>PostgreSQL | MongoDB | Selenium | Cucumber</h4>
+            <h4>Gradle | Maven | Bitbucket | Redux</h4>
+            <h4>Heroku | Netlify | Vercel | Jira</h4>
             <br />
             <div style={{ marginBottom: "10px" }}>
               <a href={gitHubURL} target="_blank" rel="noopener noreferrer">

@@ -11,12 +11,12 @@ const Phaser = () => {
         <source src={phaser} type="video/mp4" />
         Your browser does not support the video.
       </video>
-      <Card border="warning" className="card m-3">
+      <Card border="secondary" className="card m-3">
         <Card.Body>
           <Card.Title>RPG Phaser Game</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Collaborating on a functional and captivating RPG Phaser game with
-            NJIT Software Development Bootcamp classmate.
+            Collaborating on a functional and captivating RPG game using
+            PhaserJS with NJIT classmate and PNC coworker.
           </Card.Text>
           <Button variant="warning" size="lg" disabled>
             Coming Soon

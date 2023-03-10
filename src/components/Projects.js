@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 const Projects = () => {
   const Blackjack = React.lazy(() => import("./projects/Blackjack"));
-  const Restrant = React.lazy(() => import("./projects/Restrant"));
+  const Vday = React.lazy(() => import("./projects/Vday"));
   const Phaser = React.lazy(() => import("./projects/Phaser"));
 
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
       <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
         <Row fluid xxl={3}>
           <Blackjack />
-          <Restrant />
+          <Vday />
           <Phaser />
         </Row>
       </Container>

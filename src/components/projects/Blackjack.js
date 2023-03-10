@@ -11,7 +11,7 @@ const Blackjack = () => {
         <source src={blackjack} type="video/mp4" />
         Your browser does not support the video.
       </video>
-      <Card border="success" className="card m-3">
+      <Card border="secondary" className="card m-3">
         <Card.Body>
           <Card.Title>BlackJack</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
