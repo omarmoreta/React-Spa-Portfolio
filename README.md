@@ -1,7 +1,7 @@
 # React SPA Portfolio
 
 A portfolio made with React and bootstrap.
-Deployed on :
+Deployed on Vercel: https://omoreta-portfolio.vercel.app/
 
 # Getting Started with Create React App
 
