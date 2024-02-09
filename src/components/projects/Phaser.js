@@ -13,18 +13,36 @@ const Phaser = () => {
       </video>
       <Card border="secondary" className="card m-3">
         <Card.Body>
-          <Card.Title>RPG Phaser Game</Card.Title>
+          <Card.Title>RPG Phaser Game & REST-Rant App</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Collaborating on a functional and captivating RPG game using
-            PhaserJS with NJIT classmate and coworker.
+            Currently collaborating on a RPG game using
+            PhaserJS.
+            Created a full-stack restaurant review app
+            deployed on render.
           </Card.Text>
-          <Button variant="warning" size="lg" disabled>
-            Coming Soon
-          </Button>
+          <a
+            href="https://full-rest-rant.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="primary" size="lg">
+              REST-rant
+            </Button>
+          </a>
         </Card.Body>
         <Card.Footer>
           <a
             href="https://github.com/omarmoreta/Phaser-Game"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="dark" size="sm">
+              GitHub
+            </Button>
+          </a>
+          <span>   </span>
+          <a
+            href="https://github.com/omarmoreta/REST-rant-project"
             target="_blank"
             rel="noopener noreferrer"
           >
