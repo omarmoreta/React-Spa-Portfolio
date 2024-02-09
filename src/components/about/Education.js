@@ -15,16 +15,15 @@ const Education = () => {
         <Card.Body>
           <Card.Title>Education</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Currently attending Rutgers for a Fintech Certificate. Earned
-            Full-Stack Certificate at NJIT.{" "}
+            Completed Rutgers Fintech and NJIT Full-Stack Software Development Certificate.{" "}
             <a
               href="https://www.possefoundation.org/shaping-the-future/posse-photo-viewer"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Boston POSSE 2
+              Boston Bucknell University Posse 2
             </a>{" "}
-            scholar at Bucknell.
+            scholar.
           </Card.Text>
           <a
             href="https://www.youtube.com/watch?v=1DB9S8GyURc"

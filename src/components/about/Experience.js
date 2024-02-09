@@ -15,28 +15,20 @@ const Experience = () => {
         <Card.Body>
           <Card.Title>Experience</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
-            Current Automation QE at PNC and Full-Stack Associate Instructor at
-            ThriveDX. Volunteered with the Microsoft{" "}
-            <a
-              href="https://www.credly.com/badges/182fa8fc-148d-474d-8f66-877f97f0e024?source=linked_in_profile"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              TEALS
-            </a>{" "}
-            program.
+            Currently an Automation QE in the banking sector and Full-Stack Associate Instructor at
+            ThriveDX. Volunteered with TEALS program.
           </Card.Text>
           <a
-            href="https://www.linkedin.com/in/moretaomar/"
+            href="https://www.credly.com/badges/182fa8fc-148d-474d-8f66-877f97f0e024?source=linked_in_profile"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Button variant="primary" size="lg">
-              LinkedIn
+              TEALS
             </Button>
           </a>
         </Card.Body>
-        <Card.Footer>Open to Opportunities</Card.Footer>
+        <Card.Footer>Open to new Challenges</Card.Footer>
       </Card>
     </Container>
   );

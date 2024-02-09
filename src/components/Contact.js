@@ -30,7 +30,7 @@ const Contact = () => {
         }
       );
     e.target.reset();
-    alert("Email was was submitted! I will reach out as soon as possible!");
+    alert("Email was was submitted! I will be in touch as soon as possible!");
   };
 
   return (
