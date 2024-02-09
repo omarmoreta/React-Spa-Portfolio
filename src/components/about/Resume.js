@@ -29,7 +29,7 @@ const Resume = () => {
           </BrowserRouter>
         </Card.Body>
         <Card.Footer>
-          Updated Feb. 17<sup>th</sup>, 2022
+          Updated Feb. 9<sup>th</sup>, 2024
         </Card.Footer>
       </Card>
     </Container>
