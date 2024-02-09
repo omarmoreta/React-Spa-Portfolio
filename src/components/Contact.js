@@ -16,10 +16,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "gmail",
-        "template_i6l3yvf",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "user_GIi8LXDh6SEAlZ5rawr0e"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -72,7 +72,7 @@ const Contact = () => {
                 required
               />
               <br />
-              <label htmlFor="Subject">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <br />
               <input
                 type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
                 placeholder="Hi there,
                 Thank you for reach out! I will respond back as soon as possible.
                 Best,
-                 Omar"
+                Omar"
                 rows="5"
                 cols="30"
                 required
