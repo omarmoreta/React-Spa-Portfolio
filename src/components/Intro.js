@@ -21,7 +21,7 @@ const Intro = () => {
           <Card.Title>
             <h1>Hello, my name is Omar</h1>
           </Card.Title>
-          <h2>I am a full-stack software developer.</h2>
+          <h2>I am a full-stack software engineer.</h2>
         </Card.ImgOverlay>
       </Card>
     </div>

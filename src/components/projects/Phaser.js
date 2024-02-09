@@ -16,7 +16,7 @@ const Phaser = () => {
           <Card.Title>RPG Phaser Game</Card.Title>
           <Card.Text style={{ fontFamily: "Lucida Sans" }}>
             Collaborating on a functional and captivating RPG game using
-            PhaserJS with NJIT classmate and PNC coworker.
+            PhaserJS with NJIT classmate and coworker.
           </Card.Text>
           <Button variant="warning" size="lg" disabled>
             Coming Soon
